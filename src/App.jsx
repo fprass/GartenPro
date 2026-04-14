@@ -8,13 +8,13 @@ function App() {
   return (
     <>
       <section id="app">
-        <Navbar></Navbar>
         <h1>GartenApp</h1>
         <Routes>
           <Route path="/" element={<Dashboard />}></Route>
           <Route path="/Customer" element={<Customer />}></Route>
           <Route path="/Offer" element={<Offer />}></Route>
         </Routes>
+        <Navbar></Navbar>
       </section>
     </>
   );

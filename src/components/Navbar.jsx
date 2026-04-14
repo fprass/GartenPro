@@ -1,12 +1,22 @@
+import { FileText, LayoutDashboard, Users } from "lucide-react";
 import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
     <>
-      <nav>
-        <NavLink to="/">Dashboard</NavLink>
-        <NavLink to="/Customer">Kunde</NavLink>
-        <NavLink to="/Offer">Angebot</NavLink>
+      <nav className="flex justify-around items-center fixed bottom-0 w-full">
+        <NavLink to="/">
+          <LayoutDashboard />
+          <label>Dashboard</label>
+        </NavLink>
+        <NavLink to="/Customer">
+          <Users />
+          <label>Kunde</label>
+        </NavLink>
+        <NavLink to="/Offer">
+          <FileText />
+          <label>Angebot</label>
+        </NavLink>
       </nav>
     </>
   );
