@@ -7,14 +7,14 @@ import Offer from "./pages/Offer";
 function App() {
   return (
     <>
-      <section id="app">
+      <section id="app" className="ml-64">
         <h1>GartenApp</h1>
+        <Navbar></Navbar>
         <Routes>
           <Route path="/" element={<Dashboard />}></Route>
           <Route path="/Customer" element={<Customer />}></Route>
           <Route path="/Offer" element={<Offer />}></Route>
         </Routes>
-        <Navbar></Navbar>
       </section>
     </>
   );

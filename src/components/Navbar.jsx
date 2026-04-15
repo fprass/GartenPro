@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 function Navbar() {
   return (
     <>
-      <nav className="flex justify-around items-center fixed bottom-0 w-full">
+      <nav className="flex flex-col items-center fixed left-0 top-0 h-full w-64">
         <NavLink to="/">
           <LayoutDashboard />
           <label>Dashboard</label>
